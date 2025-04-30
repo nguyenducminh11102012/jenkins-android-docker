@@ -1,5 +1,5 @@
 # Inspired from https://github.com/cloudbees/jenkins-ci.org-docker
-FROM java:openjdk-7u65-jdk
+FROM eclipse-temurin:17-jdk
 
 RUN dpkg --add-architecture i386 && apt-get update && apt-get install -y wget git curl zip lib32z1 libstdc++6:i386 libsdl1.2debian:i386 libgl1-mesa-glx:i386 qemu-kvm kmod && rm -rf /var/lib/apt/lists/*
 
